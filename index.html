@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>A-sid design</title>
+	<link rel="stylesheet" href="custom.css"></link>
+</head>
+<body>
+<h1>Masonry - imagesLoaded progress</h1>
+<div style="display: flex">
+<div style="width: 10%">
+	partie gauche
+</div>
+<div class="grid" style="width: 90%">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+  </div>
+</div>
+</div>
+
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+		<script src="custom.js"></script>
+		<script>
+			// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+		// init Masonry
+		var $grid = $('.grid').masonry({
+		  itemSelector: '.grid-item',
+		  percentPosition: true,
+		  columnWidth: '.grid-sizer',
+		  gutter: '.gutter-sizer',
+		  percentPosition: true
+		});
+		// layout Masonry after each image loads
+		$grid.imagesLoaded().progress( function() {
+		  $grid.masonry();
+		});  
+
+		</script>
+</body>
+
+</html>

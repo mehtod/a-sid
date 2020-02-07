@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item { width: 24.25%; margin-bottom: 20px}
+
+.gutter-sizer { width: 1%; }
+
+.grid-item--width2 { width: 48%; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
