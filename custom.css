@@ -18,11 +18,10 @@ body { font-family: sans-serif; }
 /* ---- .grid-item ---- */
 
 .grid-sizer,
-.grid-item { width: 24.25%; margin-bottom: 20px}
+.grid-item { width: 24.25%; margin-bottom: 1%}
 
 .gutter-sizer { width: 1%; }
 
-.grid-item--width2 { width: 48%; }
 
 .grid-item img {
   display: block;
