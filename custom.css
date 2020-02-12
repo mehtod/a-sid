@@ -3,7 +3,10 @@
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-body { font-family: 'Open Sans', sans-serif;}
+body { 
+    font-family: 'Open Sans', sans-serif;
+    background-color: #131417;
+}
 
 h1, h2 {
 	margin-bottom: 0px;
