@@ -51,8 +51,28 @@ nav ul ul li{
 
 img {
     border-radius: 0.2rem;
+    max-width: 100%;
 }
 
+p {
+    color:#c7c9d3;
+    padding-bottom: 1rem;
+}
+
+button {
+    background:none; 
+    border:3px solid #aaaebc; 
+    color: #aaaebc;
+    padding: 10px 16px;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: white;
+    border-color: white;
+    color: black;
+}
 
 .nav-item {
 	margin-bottom: 	5px;
@@ -175,3 +195,39 @@ width: 100%;
     position: relative;
     padding: 0 2rem;
 }
+
+.text-white {
+    color:white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.homepage-logos {
+   padding:1rem;
+   max-height:100px ;
+   max-width:100px ;
+
+}
+
