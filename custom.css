@@ -81,6 +81,15 @@ input[type=submit] {
     border-radius: 0.25rem;
     transition: 0.5s;
 }
+
+input[type=text] {
+    width:49%;
+}
+
+input [type=email] {
+    width:49%;
+}
+
 input:hover {
     background: white;
     border-color: white;
@@ -260,4 +269,8 @@ width: 100%;
     padding: 1rem;
     max-height: 80px;
     max-width: 80px;
+}
+
+.carousel-cell {
+    max-height: 600px;
 }
