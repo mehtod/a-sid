@@ -80,19 +80,30 @@ input[type=submit] {
     padding: 7px 13px;
     border-radius: 0.25rem;
     transition: 0.5s;
+    font-family: inherit;
+    width: 150px;
 }
 
-input[type=text] {
+input{
     width:49%;
+    border:none;
+    border-bottom: 2px solid #aaaebc;
+    background-color: #1E1F26;
+    font-family: inherit;
+    font-size: 15px;
 }
 
-input [type=email] {
+textarea {
     width:49%;
+    border:none;
+    border-bottom: 2px solid #aaaebc;
+    background-color: #1E1F26;
+    font-family: inherit;
+    font-size: 15px;
 }
 
-input:hover {
-    background: white;
-    border-color: white;
+input[type=submit]:hover {
+    background-color: white;
     color: black;
 }
 
