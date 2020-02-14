@@ -56,7 +56,6 @@ img {
 
 p {
     color:#c7c9d3;
-    padding-bottom: 1rem;
 }
 
 button {
@@ -86,6 +85,11 @@ input:hover {
     background: white;
     border-color: white;
     color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .nav-item {
